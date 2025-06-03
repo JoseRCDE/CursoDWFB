@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recogida de Datos - Consumo de vegetales</title>
+</head>
+<body>
+    <header>
+        <h1>Participa en la encuesta, ¿qué verduras te gustan más?</h1>
+        <p>Proyecto de investigación sobre consumo de vegetales en el Baix Llobregat</p>
+        <hr>
+    </header>
+    <main>
+        <section id="seccion1-info">
+            <br>
+            <h2>Info acerca de la investigación</h2>
+            <p>El objetivo de esta investigación es obtener una radiografía de las preferencias de la población local respecto a
+                 la ingesta de estos productos, y de este modo orientar a productores a seleccionar sus cultivos basado en la demanda de proximidad.</p>
+            <br><br>
+            <h3>Poblaciones en las que se buscan datos</h3>
+            <ul>
+                <li>Cornellá de Llobregat</li>
+                <li>El Prat de Llobregat</li>
+                <li>Sant Boi de Llobregat</li>
+                <li>Sant Joan Despí</li>
+            </ul>
+            <img src="img/Foto_ParcAgrari.jpg" alt="Foto del Parc Agrari con Sant Boi al fondo" width="400">
+            <p>Imagen del Parc Agrari, tomada desde Sant Joan Despí, con el barrio de Ciutat Cooperativa de Sant Boi al fondo</p>
+        </section>
+        <section id="seccion2-requisitos">
+            <br>
+            <h2>Requisitos para poder participar</h2>
+                <ol>
+                    <li>Residir habitualmente en las poblaciones indicadas</li>
+                    <li>Ser mayor de edad</li>
+                    <li>Consumir habitualmente un minimo de un plato de verdura diaria</li>
+                    <li>Compra preferente de producción local</li>
+                </ol>
+        </section>
+        <section id="seccion3-formulario">
+            <br>
+            <h2>Por favor rellena el cuestionario</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <br><br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" placeholder="+18" min="18" max="130" required>
+                <br><br>
+                <label for="respuesta">Cuáles son las verduras que más te gustan y consumes normalmente?</label>
+                <br><br>
+                <textarea id="respuesta" name="respuesta" rows="4" cols="70" placeholder="Escribe aquí un minimo de 3 y un máximo de 10 vegetales que consumes habitualmente y disfrutas de ellos"></textarea>
+                <br><br>
+                <label for="mangnitud">Cuanto te gustan los vegetales? (de 1 a 10)</label>
+                <br>
+                <label>1</label><input type="range" id="magnitud" min="1" max="10" value="5"><label>10</label>
+                <br><br><br>
+                <input type="submit" value="Enviar cuestionario">
+            </form>
+            <br><br><br>
+        </section>
+    </main>    
+</body>
+<footer>
+    <hr>
+    <p>Gracias por tu participación en el estudio!</p>
+    <p>&copy; 2025 Proyecto de Investigación Baix Llobregat</p>
+    </footer>
+</html>
